@@ -25,7 +25,7 @@ export const App = () => {
         fontSize: 40,
         color: '#ebeced'
       }}
-    > Goit React HW-01 comp...
+    > React homework template
     </div>
     </>
     
