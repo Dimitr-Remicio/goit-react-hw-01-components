@@ -1,0 +1,93 @@
+@import './colors.css';
+
+.scroll-down-dude:after {
+	content: '';
+	display: block;
+	width: 18px;
+	height: 18px;
+	transform: rotate(45deg);
+	border-bottom: 4px solid var(--arrow);
+	border-right: 4px solid var(--arrow);
+}
+
+.scroll-down-dude:after {
+	animation: down-arrow-after 2.4s ease-in-out infinite;
+}
+.scroll-down-dude,.scroll-up-dude:hover{
+    cursor: pointer;
+}
+
+@keyframes down-arrow-after {
+    0%, 20%, 50%, 80%, 100% {
+        
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: rotate(45deg) translate(0%, 0%);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: rotate(45deg) translate(-50%, -50%);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: rotate(45deg) translate(-15%, -15%);
+    }
+  }
+
+
+.scroll-up-dude:after {
+	content: '';
+	display: block;
+	width: 18px;
+	height: 18px;
+	transform: rotate(-150deg);
+	border-bottom: 4px solid  var(--arrow);
+	border-right: 4px solid  var(--arrow);
+}
+
+.scroll-up-dude:after {
+	animation: up-arrow-after 2.4s ease-in-out infinite;
+}
+
+
+@keyframes up-arrow-after {
+    0%, 20%, 50%, 80%, 100% {
+        
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: rotate(-135deg) translate(0%, 0%);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: rotate(-135deg) translate(-50%, -50%);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: rotate(-135deg) translate(-15%, -15%);
+    }
+  }
+
+  .icon {
+    display: inline-block;
+    position: absolute;
+    width: 5em;
+    height: 8em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    top: 0;
+    margin: 40px;
+  }
+  .icon-React-icon {
+    width: 1em;
+  }
