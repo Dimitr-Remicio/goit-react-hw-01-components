@@ -77,8 +77,11 @@ function Dark() {
             gap: '50px',
           }}
         >
-          <div class="scroll-down-dude"></div>
-          <div class="scroll-up-dude"></div>
+          {/* <div class="scroll-down-dude" > */}
+            <a class="scroll-down-dude" href="#statistics"> </a>
+            <a class="scroll-up-dude" href="#Profile" > </a>
+          {/* </div> */}
+          {/* <div class="scroll-up-dude"></div> */}
         </div>
       </div>
 
