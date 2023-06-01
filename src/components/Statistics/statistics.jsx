@@ -6,7 +6,7 @@ function randomHexColor() {
 }
 
 
-export default function TableState({ stats }) {
+export default function Statistics ({ stats }) {
   
   return (
     <>
@@ -30,7 +30,7 @@ export default function TableState({ stats }) {
 
 
 
-TableState.prototype = {
+Statistics.prototype = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({

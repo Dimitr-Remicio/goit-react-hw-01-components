@@ -1,6 +1,6 @@
 import { Perfil } from 'components/Perfil/Perfil';
 
-import TableState from 'components/Statistics/Statistics';
+import Statistics  from 'components/Statistics/Statistics';
 import FriendsList from 'components/FriendsList/FriendsList';
 import TransactionsTable from 'components/TransactionHistory/TransactionHistory';
 import Dark from 'components/arrow/arrows';
@@ -62,7 +62,7 @@ export default function App() {
         </div>
 
         <div style={section} name="states" id='states'>
-          <TableState stats={stats}/> 
+          <Statistics stats={stats}/> 
         </div>
         
         <div style={section} name="friends" id='friends'>
