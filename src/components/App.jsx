@@ -1,17 +1,15 @@
 import { Perfil } from 'components/Perfil/Perfil';
-// import Statistics from 'components/Statistics/statistics';
-// import { Statistics } from 'components/Statistics/statistics';
-import TableState from 'components/Statistics/Statistics.jsx';
-import FriendsList from 'components/FriendsList/FriendsList.jsx';
+
+import TableState from 'components/Statistics/Statistics';
+import FriendsList from 'components/FriendsList/FriendsList';
+import TransactionsTable from 'components/TransactionHistory/TransactionHistory';
+import Dark from 'components/arrow/arrows';
+
 import stats from 'data/stats.json';
 import friends from 'data/friends.json';
 import user from 'data/user.json';
 import transactions from 'data/transactions.json';
-// import stats from 'data/stats.json';
-import TransactionsTable from 'components/TransactionHistory/TransactionHistory';
-import Dark from 'components/arrow/arrows';
-// import staticStats from "../data/staticStats.json";
-// import user from "../data/user.json";
+
 
 
 const styleTest = {
