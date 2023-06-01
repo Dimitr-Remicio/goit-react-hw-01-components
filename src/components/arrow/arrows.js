@@ -37,13 +37,7 @@ function Dark() {
         <div
           className={`Dark ${theme}`}
           id="Darkbutton"
-          style={{
-            position: 'absolute',
-            top: '0',
-            fontSize: '30px',
-            margin: '50px 0',
-            zIndex: '200',
-          }}
+
         >
           <div style={style}>
             <input
@@ -55,11 +49,6 @@ function Dark() {
             <label className={style.label} htmlFor="chk">
               <div className={style.ball}></div>
             </label>
-          </div>
-        </div>
-        <div class="scroll-downs" onClick={overflowScroll}>
-          <div class="mousey">
-            <div class="scroller"></div>
           </div>
         </div>
         <div className="content_header">
@@ -99,11 +88,14 @@ function Dark() {
               />
             </svg>
           </a>
-          {/* <div className="scroll-1 dude" href="#A"></div>
-        <div className="scroll-2 dude" href="#B"></div>
-        <div className="scroll-3 dude" href="#C"></div>
-        <div className="scroll-4 dude" href="#D"></div> */}
+
         </div>
+        <div class="scroll-downs" onClick={overflowScroll}>
+          <div class="mousey">
+            <div class="scroller"></div>
+          </div>
+        </div>
+        
       </div>
     </>
   );
