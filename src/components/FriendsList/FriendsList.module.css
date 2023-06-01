@@ -1,9 +1,14 @@
 .friendlist{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     gap:50px;
     margin:0 auto;
-    padding:0;
+    padding:50px;
+
+    border-radius: 17px;
+    box-shadow: 0px 0px 25px -15px var(--shadow-card);
+
+    background-color: var(--card-color);
 
 }
 
@@ -11,7 +16,6 @@
     display: flex;
     align-items: center;
   
-    margin-bottom: 15px;
   }
   
   .item:last-child {
@@ -40,11 +44,14 @@
   
   .avatar {
     padding: 15px;
+    border-radius: 10px;
     margin-right: 20px;
-    border: 1px solid #ccc;
+    border: 0px solid var(--shadow-card);
   }
   
   .name {
     font-size: 20px;
     font-weight: 700;
+
+    color: var(--text-color);
   }

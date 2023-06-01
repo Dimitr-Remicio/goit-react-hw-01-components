@@ -5,13 +5,8 @@ import style from 'aditional/toogle.module.css';
 import 'aditional/colors.css';
 import 'aditional/arrow.css';
 
-
-// const header = {
-
-// }
-
 function Dark() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
   const toggleTheme = () => {
     if (theme === 'light') {
       setTheme('dark');
@@ -19,73 +14,99 @@ function Dark() {
       setTheme('light');
     }
   };
+
+  const overflowScroll = () => {
+    const scrollActn = document.querySelector('#style-3');
+
+    if (scrollActn.classList.contains('scrollbar')) {
+      scrollActn.style.overflow = 'hidden';
+      scrollActn.classList.remove('scrollbar');
+    } else {
+      scrollActn.style.overflow = 'scroll';
+      scrollActn.classList.add('scrollbar');
+    }
+  };
+
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
 
   return (
     <>
-      <div
-        class="header-right"
-        style={{
-          height: '100%',
-          width: 'auto',
-          padding: '0 50px',
-          display: 'flex',
-          position:'fixed',
-          justifyContent: 'center',
-          alignItems: 'center',
-          right: '0',
-          margin: '0 auto',
-          backgroundColor: 'var(--background-color)',
-          boxShadow: '0px 0px 5px 0px var(--shadow-card)',
-
-          zIndex: '199',
-        }}
-      >
+      <div className="header-right">
         <div
-        className={`Dark ${theme}`}
-        id="Darkbutton"
-        style={{
-          position: 'absolute',
-          top: '0',
-          fontSize: '30px',
-          margin: '50px 0',
-
-          zIndex: '200',
-        }}
-      >
-        <div style={style}>
-          <input
-            type="checkbox"
-            class={style.checkbox}
-            id="chk"
-            onClick={toggleTheme}
-          />
-          <label class={style.label} for="chk">
-            <div class={style.ball}></div>
-          </label>
-        </div>
-
-
-      </div>
-        <div
-          className="content_header"
+          className={`Dark ${theme}`}
+          id="Darkbutton"
           style={{
-            display: 'flex',
-            flexDirection: 'column-reverse',
-            gap: '50px',
+            position: 'absolute',
+            top: '0',
+            fontSize: '30px',
+            margin: '50px 0',
+            zIndex: '200',
           }}
         >
-          {/* <div class="scroll-down-dude" > */}
-            <a class="scroll-down-dude" href="#statistics"> </a>
-            <a class="scroll-up-dude" href="#Profile" > </a>
-          {/* </div> */}
-          {/* <div class="scroll-up-dude"></div> */}
+          <div style={style}>
+            <input
+              type="checkbox"
+              className={style.checkbox}
+              id="chk"
+              onClick={toggleTheme}
+            />
+            <label className={style.label} htmlFor="chk">
+              <div className={style.ball}></div>
+            </label>
+          </div>
+        </div>
+        <div class="scroll-downs" onClick={overflowScroll}>
+          <div class="mousey">
+            <div class="scroller"></div>
+          </div>
+        </div>
+        <div className="content_header">
+          <a href="#tabtransaction">
+            <svg id="D" width="30" height="30" viewBox="0 0 176.78 176.78">
+              <polygon
+                id="headerCont"
+                class="cls-1  btn  "
+                points="176.78 35.35 141.42 0 88.39 53.03 35.35 0 0 35.35 53.03 88.39 0 141.42 35.35 176.78 88.39 123.74 141.42 176.78 176.78 141.42 123.74 88.39 176.78 35.35"
+              />
+            </svg>
+          </a>
+          <a href="#friends">
+            <svg id="C" width="30" height="30" viewBox="0 0 176.78 176.78">
+              <polygon
+                id="headerCont"
+                class="cls-1 btn  "
+                points="176.78 35.35 141.42 0 88.39 53.03 35.35 0 0 35.35 53.03 88.39 0 141.42 35.35 176.78 88.39 123.74 141.42 176.78 176.78 141.42 123.74 88.39 176.78 35.35"
+              />
+            </svg>
+          </a>
+          <a href="#states">
+            <svg id="B" width="30" height="30" viewBox="0 0 176.78 176.78">
+              <polygon
+                id="headerCont"
+                class="cls-1 btn  "
+                points="176.78 35.35 141.42 0 88.39 53.03 35.35 0 0 35.35 53.03 88.39 0 141.42 35.35 176.78 88.39 123.74 141.42 176.78 176.78 141.42 123.74 88.39 176.78 35.35"
+              />
+            </svg>
+          </a>
+          <a href="#profile">
+            <svg id="A" width="30" height="30" viewBox="0 0 176.78 176.78">
+              <polygon
+                id="headerCont"
+                class="cls-1 btn "
+                points="176.78 35.35 141.42 0 88.39 53.03 35.35 0 0 35.35 53.03 88.39 0 141.42 35.35 176.78 88.39 123.74 141.42 176.78 176.78 141.42 123.74 88.39 176.78 35.35"
+              />
+            </svg>
+          </a>
+          {/* <div className="scroll-1 dude" href="#A"></div>
+        <div className="scroll-2 dude" href="#B"></div>
+        <div className="scroll-3 dude" href="#C"></div>
+        <div className="scroll-4 dude" href="#D"></div> */}
         </div>
       </div>
-
     </>
   );
 }
+
 export default Dark;

@@ -1,48 +1,94 @@
 @import '../../aditional/colors.css';
 
-
 .title {
-    text-transform: uppercase;
-    color: #a7a5a5;
+  text-transform: uppercase;
+  color: #a7a5a5;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.statistics {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.statlist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:50px;
+  margin:0 auto;
+  justify-content: center;
+  padding:0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 130px;
+  padding: 20px;
+
+  box-shadow: 0px 0px 14px -5px var(--shadow-card);
+
+  border-radius: 17px;
+
+  color: var(--white-color);
+}
+
+.label {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.percentage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+  .title {
+    font-size: 30px;
+    
+
     margin-bottom: 30px;
-  }
-  
-  .statistics{
     display: flex;
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
   }
-
-  .statList {
+  .statlist {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap:20px;
+    margin:0 auto;
+
+    max-width: 500px;
+    
   }
-  
-  .item {
+}
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 20px;
+    
+
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .statlist {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  
-    width: 130px;
-    padding: 20px;
+    gap:20px;
+    margin:0 auto;
 
-    box-shadow: 0px 0px 14px -5px var(--shadow-card);
-
-    border-radius: 17px;
-  
-    color: var(--text-color);
+    max-width: 200px;
+    
   }
-  
-  .label {
-    font-size: 12px;
-    margin-bottom: 10px;
-  }
-
-  .percentage{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    font-weight: bold;
-  }
+}

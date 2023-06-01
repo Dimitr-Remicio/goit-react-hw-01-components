@@ -1,17 +1,19 @@
 .light{
     --background-color:#E7ECF2;
-    --card-color:#FFFFFF;
+    --card-color:#ffffff7a;
     --stats-color:#E7ECF2;
     
     --text-color:#000000;
     --text-color-50:#9c9c9c;
     
+    --white-color:#FFFFFF;
     
     --shadow-color:#858585 ;
     --shadow-card:#4d4d4d98;
-
-
+    
+    
     --arrow:#000000;
+    --arrow-hover:#00000091;
     
     --state-1:#F0C85A;
     --state-2:#8D8EF4;
@@ -25,10 +27,13 @@
     --text-color:#ffffff;
     --text-color-50:#969696;
     
-    --shadow-color: #000000;
-    --shadow-card:#d86f6f;
+    --white-color:#FFFFFF;
     
-    --arrow:#d8bc6f;
+    --shadow-color: #000000;
+    --shadow-card:#131313;
+    
+    --arrow:#ffd1d1;
+    --arrow-hover:#ffd1d177;
     
     --state-1:#f0c85a7a;
     --state-2:#8d8ff481;

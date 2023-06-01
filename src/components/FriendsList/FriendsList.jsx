@@ -11,7 +11,7 @@ export default function FriendsList({ friends }) {
              
                 <li className={style.item} key={id}>
                 <span className={isOnline ? style.status__true : style.status__false}></span>
-                <img className={style.avatar} src={avatar} alt="User avatar" width="48" />
+                <img className={style.avatar} src={avatar} alt="User avatar" width="70" />
                 <p className={style.name} >{name}</p>
               </li>
            );

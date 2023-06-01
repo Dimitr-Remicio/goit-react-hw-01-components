@@ -2,15 +2,7 @@ import PropTypes from 'prop-types';
 import style from './Statistics.module.css';
 
 function randomHexColor() {
-  return `#${Math.floor(Math.random() * 17215).toString(16)}`;
-}
-
-const listStyle = {
-  display:'flex',
-  flexDirection:'row',
-  gap:'50px',
-  margin:'0 auto',
-  padding:'0',
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
 
@@ -20,7 +12,7 @@ export default function TableState({ stats }) {
     <>
     <section className={style.statistics}>
       <h2 className={style.title}>Upload stats</h2>
-      <ul className={style.statlist} style={listStyle}>
+      <ul className={style.statlist}>
          {stats.map(({ id, label, percentage }) => {
            return (
               <li className={style.item} key={id} style={{ backgroundColor: randomHexColor() }}>
