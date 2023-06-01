@@ -3,7 +3,7 @@ import { Perfil } from 'components/Perfil/Perfil';
 import FriendsList from 'components/FriendsList/FriendsList';
 import TransactionsTable from 'components/TransactionHistory/TransactionHistory';
 import Dark from 'components/arrow/arrows';
-import Statistics  from 'components/sumadr/mlapelo';
+import Statistics  from 'components/StaticStats/Statistics';
 
 import stats from 'data/stats.json';
 import friends from 'data/friends.json';
