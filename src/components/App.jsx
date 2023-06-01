@@ -1,6 +1,6 @@
 import { Perfil } from 'components/Perfil/Perfil';
 
-import Statistics  from 'components/Statistics/Statistics';
+import Statistics  from 'components/Statistics/Statistics.jsx';
 import FriendsList from 'components/FriendsList/FriendsList';
 import TransactionsTable from 'components/TransactionHistory/TransactionHistory';
 import Dark from 'components/arrow/arrows';
