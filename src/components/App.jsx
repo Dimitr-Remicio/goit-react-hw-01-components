@@ -1,11 +1,11 @@
 import { Perfil } from 'components/Perfil/Perfil';
 
-// import Statistics  from 'components/Statistics/Statistics.jsx';
 import FriendsList from 'components/FriendsList/FriendsList';
 import TransactionsTable from 'components/TransactionHistory/TransactionHistory';
 import Dark from 'components/arrow/arrows';
+import Statistics  from 'components/Statistics/Statistics';
 
-// import stats from 'data/stats.json';
+import stats from 'data/stats.json';
 import friends from 'data/friends.json';
 import user from 'data/user.json';
 import transactions from 'data/transactions.json';
@@ -60,10 +60,10 @@ export default function App() {
         <div style={section} name="profile" id='profile'> 
           <Perfil user={user}/>
         </div>
-{/* 
+
         <div style={section} name="states" id='states'>
           <Statistics stats={stats}/> 
-        </div> */}
+        </div>
         
         <div style={section} name="friends" id='friends'>
           <FriendsList friends={friends}/> 
